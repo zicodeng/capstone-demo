@@ -1,0 +1,231 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    margin: 0;
+    color: white;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.4em;
+    background-color: #d12a2f;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2em;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.page-cta {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    text-align: center;
+}
+
+.page-cta > h1 {
+    font-size: 48px;
+}
+
+.section {
+    min-height: 80vh;
+    padding: 0 100px;
+    margin-bottom: 150px;
+    position: relative;
+}
+
+.section__team {
+    margin-bottom: 100px;
+}
+
+@media all and (max-width: 991px) {
+    .section {
+        min-height: unset;
+        margin-bottom: 150px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .section {
+        padding: 50px;
+        margin-bottom: 0;
+    }
+}
+
+@media all and (max-width: 575px) {
+    .section {
+        padding: 30px;
+    }
+}
+
+.title {
+    margin-bottom: 100px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media all and (max-width: 991px) {
+    .title {
+        margin-bottom: 50px;
+    }
+}
+
+.content {
+    display: table;
+}
+
+.content--flex {
+    display: flex;
+    justify-content: center;
+}
+
+@media all and (max-width: 991px) {
+    .content--flex {
+        flex-direction: column;
+    }
+}
+
+.article {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.article:last-child {
+    margin-bottom: 50px;
+}
+
+@media all and (max-width: 991px) {
+    .article {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .article:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.box {
+    width: 45%;
+    clear: both;
+}
+
+@media all and (max-width: 991px) {
+    .box {
+        width: 100%;
+    }
+}
+
+.box--left {
+    float: left;
+}
+
+.box--right {
+    margin: 80px 0;
+    float: right;
+}
+
+@media all and (max-width: 991px) {
+    .box--right {
+        margin: 30px 0;
+    }
+
+    .card > h2 {
+        text-align: center;
+    }
+}
+
+.card--image > video,
+.card--image > img {
+    min-width: 800px;
+    max-width: 1000px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+@media all and (max-width: 1300px) {
+    .card--image > video,
+    .card--image > img {
+        min-width: unset;
+        max-width: unset;
+        width: 750px;
+    }
+}
+
+@media all and (max-width: 1199px) {
+    .card--image > video,
+    .card--image > img {
+        width: 600px;
+    }
+}
+
+@media all and (max-width: 991px) {
+    .card--image > video,
+    .card--image > img {
+        width: 100%;
+    }
+}
+
+.card--text {
+    margin-left: 50px;
+}
+
+@media all and (max-width: 991px) {
+    .card--text {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 40px;
+}
+
+@media all and (max-width: 991px) {
+    .profile {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+}
+
+.profile > .photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    background-color: yellow;
+    background-size: cover;
+}
+
+.profile > .name {
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.profile > .position {
+    margin-bottom: 0;
+}
